@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p>
+<% if @task.completed %>
+<p>This task is completed</p>
+<% else %>
+<p>This task is not completed yet</p>
+<% end %>
+
+<p><%= link_to '<i class="fa-solid fa-trash">Back to list</i>'.html_safe, tasks_path %></p>
+
